@@ -1,0 +1,150 @@
+/*
+ * Overwrite bootstrap defaults
+ * --------------------------------------------------
+ */
+/*.list-group-item {*/
+/*border: 0px solid #ddd;*/
+/*}*/
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+/*html,*/
+/*body {*/
+/*overflow-x: hidden; !* Prevent scroll on narrow devices *!*/
+/*}*/
+
+html {
+    height: 100%;
+    background: transparent !important;
+    /*font-family: 'Karla', sans-serif;*/
+    /*font-family: 'Karla', sans-serif;*/
+    font-family: 'Finger Paint', cursive;
+    /*font-family: 'Londrina Sketch', cursive;*/
+    /*font-family: 'Nova Slim', cursive;*/
+    /*font-family: 'Spinnaker', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Signika', sans-serif;*/
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/* icons */
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* disable chrome focus ring */
+:focus {
+    outline: -webkit-focus-ring-color none 5px;
+}
+
+@media screen and (min-width: 0px)
+and (max-width: 1280px) {
+    .view {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (min-width: 1280px)
+and (max-width: 3000px) {
+    .view {
+        padding-top: 75px;
+    }
+}
+
+spacer {
+    /*margin-top:6px;*/
+    height: 20px;
+    width: 100%;
+    background: white;
+}
+
+bg-container {
+    background: white;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-light-gray {
+    background-color: rgb(238, 238, 238);
+}
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+    transition: 5s linear all;
+    opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+/* start 'enter' transition on main view */
+.view.ng-enter {
+    /* transition on enter for .5s */
+    transition: 4s;
+
+    /* start with opacity 0 (invisible) */
+    opacity: 0;
+}
+
+/* end 'enter' transition on main view */
+.view.ng-enter-active {
+    /* end with opacity 1 (fade in) */
+    opacity: 1;
+}

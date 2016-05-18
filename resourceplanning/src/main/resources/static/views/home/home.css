@@ -1,0 +1,54 @@
+.background-home-wrapper {
+    left: 0;
+    right: 0;
+}
+
+.background-home {
+    width: 120%;
+    position: fixed;
+    top: -200px;
+    left: 0;
+    padding: 0;
+    z-index: -10000;
+}
+
+.home-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+    background: #563dff linear-gradient(center);
+}
+
+@media screen and (min-width: 0px)
+and (max-width: 1280px) {
+    .home-img2,.home-img2-overlay  {
+        height: 500px;
+    }
+}
+@media screen and (min-width : 1280px)
+and (max-width:3000px){
+    .home-img2, .home-img2-overlay{
+        height: 500px;
+    }
+}
+
+.home-img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -10000;
+    background-image: url('img/donkyatbeach_1995x617.jpg');
+
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-img2-overlay {
+    background-color: rgba(6, 23, 95, 0.38);
+}

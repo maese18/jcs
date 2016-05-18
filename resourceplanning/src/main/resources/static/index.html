@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <!-- see http://www.montere.it/?cat=37&lang=en for an example -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VBCM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <base href="/"/>
+    <!-- TODO: -->
+    <!--<link rel="shortcut icon" sizes="196x196" href="assets/img/icon.png">-->
+    <link rel="icon" type="image/png" href="assets/img/favicon-16.png">
+    <link href='https://fonts.googleapis.com/css?family=Material+Icons|Finger+Paint|Londrina+Sketch|Nova+Slim|Roboto|Signika' rel='stylesheet' type='text/css'> <!-- TODO: Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!--<link rel="apple-touch-icon" href="assets/img/custom_icon.png">-->
+    <!--<link rel="apple-touch-icon" href="assets/img/touch-icon-iphone.png">-->
+    <!--<link rel="apple-touch-icon" sizes="76x76" href="assets/img/touch-icon-ipad.png">-->
+    <!--<link rel="apple-touch-icon" sizes="120x120" href="assets/img/touch-icon-iphone-retina.png">-->
+    <!--<link rel="apple-touch-icon" sizes="152x152" href="assets/img/touch-icon-ipad-retina.png">-->
+
+    <!-- TODO: Add startup image - On iPhone and iPod touch, the image must be 320 x 480 pixels and in portrait orientation.-->
+    <!--<link rel="apple-touch-startup-image" href="img/startup.png">-->
+    <!--<link rel="stylesheet" href="../../../node_modules/angular-loading-bar/src/loading-bar.css">-->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <!-- TODO: Insert Qbaka script-->
+    <!-- /Qbaka -->
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<!--<body ng-app="app" ng-cloak scrolly="{target:menuBar,scrollClass:shrink,defaultClass:un-shrink}">-->
+
+<body ng-app="app" ng-cloak>
+<div id="scrollRoot">
+    <noscript>
+        <div>
+            <h3>
+                Javascript is deactivated. You must <a href="http://www.activatejavascript.org/">activate javascript</a>
+                in
+                order to use this site.
+            </h3>
+        </div>
+    </noscript>
+    <!-- Container #1 (see wireframe) -->
+    <header ng-include="'header.tpl.html'"></header>
+    <!--<sidebar ng-include="'sidebar.tpl.html'"></sidebar>-->
+    <div layout="row" layout-fill layout-align="top center">
+        <section flex="100" ui-view class="view"></section>
+    </div>
+</div>
+
+<!-- Angular Material requires Angular.js Libraries -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>-->
+<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>-->
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-aria.min.js"></script>-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>-->
+
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.1.8/svg-morpheus.js"></script>
+
+<!--<script src="../../../node_modules/angular-loading-bar/src/loading-bar.js"></script>-->
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+<script src="vendors.js" type="text/javascript" charset="utf-8"></script>
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

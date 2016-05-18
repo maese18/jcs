@@ -1,0 +1,52 @@
+<div ng-controller="HeaderCtrl as vm">
+    <md-toolbar id="menuBar" layout="row" layout-align-lt-md="end center" layout-align-gt-md="start center"
+                shrink-on-scroll root-id="scrollRoot" scroll-class="shrink" default-class="un-shrink"
+    >
+        <!-- ------------------------------>
+        <!-- menubar for all devices -->
+        <!-- ------------------------------>
+        <div placeholder="" flex="10"> </div>
+        <div flex="none" class="vbcm-title">VBCM</div>
+        <div flex layout-align="center end" class="vbcm-subtitle">Volleyball Club Mönchaltorf</div>
+
+        <ng-md-icon id="menuIcon" ng-click="toggleSidebar()"
+                    icon="{{menuIcon}}" size="40" options='{"rotation": "none"}'
+                    ng-attr-style="fill: {{menuIconColor}};position:absolute;top:-10px;right:60px;width:50px;height:50px;valign:middle">
+        </ng-md-icon>
+        <!--off layout -->
+        <div class="logo"></div>
+
+        <!--</section>-->
+    </md-toolbar>
+
+    <!-- ------------------------------>
+    <!-- sidebar for smaller devices -->
+    <!-- ------------------------------>
+    <md-sidenav layout="column" layout-align="start start" class="md-sidenav-left md-whiteframe-z1"
+    <md-sidenav layout="column" layout-align="start start" class="md-sidenav-left md-whiteframe-z1"
+                style="opacity:0.95"
+                md-component-id="left"
+                md-is-locked-open="false">
+        <div style="height:120px"></div>
+        <md-content flex="{{ vm.areas.length*30 }}px" layout="column" layout-align="start center ">
+            <div ng-repeat="area in vm.areas">
+                <a class="md-button"
+                   ui-sref="{{area.uiref}}"
+                   aria-label="{{ area.title }}"
+                   layout-align="start start"
+                   style="position:relative;text-align:left;width:200px;height:40px"
+                >
+
+                    <ng-md-icon icon="{{area.uiref==selectedNav?'select_all':area.mdIcon}}"
+                                ng-attr-style="fill:{{area.uiref==selectedNav?'red':'gray'}}"
+                                size="30" options='{"rotation": "clock" }'
+                                class="headerIcon"
+                    ></ng-md-icon>
+                    <span style="position:relative;left:10px;top:0px"> {{area.title}}</span>
+                </a>
+                <div class="md-ripple-container"></div>
+            </div>
+
+        </md-content>
+    </md-sidenav>
+</div>

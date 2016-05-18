@@ -1,0 +1,8 @@
+/node_modules
+/.vagrant
+/.idea
+/src/main/webapp/dist/
+/target
+.classpath
+.settings/
+/bin/
